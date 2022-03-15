@@ -73,5 +73,9 @@ app.get('/default', (req, res) => {
     downloadIntoMemory(res);
 })
 
+app.get('/', (req, res) => {
+	res.send("SBIServer");
+})
+
 
 app.listen(3000);
