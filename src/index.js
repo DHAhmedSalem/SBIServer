@@ -3,7 +3,6 @@ var cors = require('cors')
 const app = express()
 
 app.use(cors())
-app.set('port', process.env.PORT || 3000);
 
 const bucketName = 'schoolbutterfliestest.appspot.com';
 
@@ -80,4 +79,4 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(3000);
+app.listen(process.env.PORT || 5000);
